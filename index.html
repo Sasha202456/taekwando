@@ -1,59 +1,100 @@
 <html>
     <title> Корейська школа бойових мистецтв</title>
     <style>
-    body {
-      font-famaly: sans-serif;
-          background-color:#b3de92;
-        }
+    html {
+      scroll-behavior: smooth;
+    }
+      body {
+        font-family: sans-serif;
+        background-color:#b3de92;
+       }
         h1{
-          text-again:center;
+          text-align:center;
           font-size:50px;
-          }
-          h2{
-            font-size:40px;
-          }
-          p{
-            font-soze:20px;
-          }
-          footer{
-            background-color:green;
-          }
-          header{
-            background-color:red;
-          }</style>
+        }
+
+        h2{
+          font-size:40px;
+        }
+
+        p{
+          font-soze:20px;
+        }
+
+        nav {
+          margin-top: 10px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+        
+        nav a {
+          color: black;
+        }
+
+        footer{
+          background-color:lightblue;
+        }
+
+        header{
+          background-color:lightblue;
+          text-align: center;
+         }
+         
+         .images {
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           width: 100%;
+           /* height: 400px; */
+         }
+         
+         table {
+           border-collapse: collapse;
+           background-color: lightgreen;
+           border: 1px solid red;
+           font-size: 20px;
+         }
+         
+         tr {
+           border: 1px solid red;
+         }
+         
+         td {
+           border: 1px solid red;
+           padding: 10px;
+         }
+      </style>
       <body>
         <header>
-          <a href="#about">Про тхеквондо</a>
-          <a href="#strongKicks">Сильні удари</a>
-         <p style="font-size:30px;color: black;background-color:red; text-align:center">Вас вітає<br/>
-        <img src="https://upload.wikimedia.org/wikipedia/ru/a/a1/World_Taekwondo.svg" height="150"/>
-     </p>
-      <h1 style="font-size:40px;color: black;background-color:red; text-align:center">школа бойових мистецтв</h1>
+          <img src="https://upload.wikimedia.org/wikipedia/ru/a/a1/World_Taekwondo.svg" height="70" width="100"/>
+          <br/>
+          <nav>
+            <a href="#about">Про тхеквондо</a>
+            <a href="#strongKicks">Сильні удари</a>
+            <a href="#shedule">Розклад</a>
+           </nav>
         </header>
         <main>
-            <p>
-              <h2 id="about"> Про тхеквондо</h2>
+          <p style="text-align:center; color: red; font-size: 40px; margin:0; margin-top: 40px;">
+            <b>Вас вітає</b>
+          </p>
+          <h1 style ="margin-top:0;">Школа бойових мистецтв</h1>
+            
+              <h2 id="about">Про тхеквондо</h2>
+              <p>
                 Тхеквондо (кор. 태권도, 跆拳道) — бойове мистецтво, олімпійський вид спорту та національний вид спорту в Південній Кореї. Тхеквондо є одним з найбільш систематизованих і науково обґрунтованих бойових мистецтв світу. Ця дисципліна за допомогою тренувань дозволяє людині зміцнити здоров'я, навчитись самооборони та привчає працювати над саморозвитком духовності й інтелекту.Історія корейських бойових мистецтв та традицій, на основі яких і було створено сучасне тхеквондо, налічує понад 2000 років. Однак саму назву було офіційно затверджено 11 квітня 1955 року, коли засновник тхеквондо, генерал Чой Хон Хі (9 дан), об'єднав школи корейських бойових мистецтв.
           </p>
+          <div class="images">
+            <img src="https://lh6.googleusercontent.com/proxy/XrdEwCnfXUyjbBF51wUXamOZvwG1WrSx7D_zwcFepu8UkLWtCtgmO9KRUK6FryKtGyio3aG1__yRs8A8C1cIjUidPUNacVtFXmyplxtmaxWm74Q5dP29_g" style="max-width:400px;"/>
+            <img src="https://kickboxer.com.ua/wp-content/uploads/taekwondo_2.jpg" style="max-width:400px;" />
+          </div>
           <h2 id="strongKicks"> Сильні удари</h2>
-         <table style="border:1px solid green;border-collapse:collapse;">
-              <tr style="border:1px solid green;background-color:Olive;">
-                <td style="border:1px solid red;">середня ланка</td>
-                <td style="border:1px solid red;">17.00 до 19.00</td>
-                <td style="border:1px solid red;">понеділок,середа,п'ятниця.</td>
-              </tr>
-              <tr style="border:1px solid green;background-color:Olive;">
-                <td style="border:1px solid red;">старша ланка</td>
-                <td style="border:1px solid red;">19.00 до 21.00</td>
-                <td style="border:1px solid red;">понеділок,середа,п'ятниця.</td>
-              </tr>
-          </table>
-        </main>  
-      <footer>
-        <p>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdA99588xQUmTnGnYA3pKELfr40RryT-j13A&s"/>  
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRijqOutcD2_2lifEWGt77_PeuhJgalOpcdJQ&s"/>
-        </p>
+          
+          <div class="images">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdA99588xQUmTnGnYA3pKELfr40RryT-j13A&s" style="max-width:400px;"/>  
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRijqOutcD2_2lifEWGt77_PeuhJgalOpcdJQ&s" style="max-width:400px;"/>
+        </div>
       <p>
      Тхеекук (Техніки спонтанного удару): Використовується для атак на відстані, особливо в комбінаціях з прямими ударами.
 
@@ -67,6 +108,34 @@
 
 Мулі Чаги (Підсічка): Використовується для знищення балансу суперника, може бути дуже ефективним у комбінації з іншими ударами.
       </p> 
+      
+      <h2 id="shedule">
+        Розклад Занять
+      </h2>
+         <table>
+              <tr>
+                <td style="background-color: lightcoral;">Cередня Ланка</td>
+                <td><b>17.00</b> до <b>19.00</b></td>
+                <td>Понеділок,<br/>Середа,<br/>П'ятниця.</td>
+              </tr>
+              <tr>
+                <td style="background-color: lightcoral;">Старша Ланка</td>
+                <td><b>19.00</b> до <b>21.00</b></td>
+                <td>Понеділок,<br/>Середа,<br/>П'ятниця.</td>
+              </tr>
+          </table>
+        </main>  
+      <footer>
+        <p>
+          <i>Адреса:</i>
+          <br>
+          <b>проспект Леся Курбаса, 18Д, Київ, 03162</b>
+        </p>
+        <p>
+          <i>Номер телефону:</i>
+          <br/>
+          <b>096 288 0627</b>
+        </p>
       </footer>
     </body>
     </html>
